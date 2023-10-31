@@ -1,0 +1,46 @@
+h3{
+    padding: 10px;
+}
+
+.tablacontainer{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    padding: 7px 10px 25px;
+    border: solid 1px #dbdbdb;
+    width: 700px;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 4px;
+    box-shadow: 5px 5px 20px black ;
+}
+
+.table{
+    width: 500px;
+}
+.rowstyle{
+    display: flex;
+    padding: 5px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+    background-color: #e6e4e4;
+    border: solid 1px rgb(176, 176, 176);
+    font-size: 14px;
+    text-align: left;      
+}
+
+.titlestyle{
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    gap: 25px;
+    border: solid 2px grey ;
+    background-color: #1a73e8;
+    color: white;
+    font-size: 14px;
+}
+
+.columna2{
+    text-align: center;
+}

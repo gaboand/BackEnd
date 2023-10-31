@@ -1,0 +1,125 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    gap: 25px;
+}
+
+h3{
+    padding: 10px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    padding: 7px;
+    border: solid 1px #dbdbdb;
+    width: 450px;
+    height: 520px;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 4px;
+    box-shadow: 5px 5px 20px black ;
+}
+
+.campos{
+    color: #707070;
+    background: none;
+    border: solid 1px #000, .1;
+    border-radius: 4px;
+    padding: 7px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+
+}
+
+.campos:focus {
+    border: solid 2px #1a73e8;
+    outline: none;
+}
+
+.etiqueta1{
+    font-size: 14px;
+    position: absolute;
+    top: 80px;
+    left: 140px;
+    cursor:pointer;
+    color: #757575;
+    transition: .5s;
+}
+.etiqueta2{
+    font-size: 14px;
+    position: absolute;
+    top: 140px;
+    left: 140px;
+    cursor:pointer;
+    color: #757575;
+    transition: .5s;
+}
+
+.campos:focus + .etiqueta1 ,
+.campos:not(:placeholder-shown) + .etiqueta1{
+    transform: translateY(-20px);
+    background-color: white;
+    color: rgb(3, 105, 239);
+    font-size: 12px;
+    padding: 5px;
+}
+
+.campos:not(:focus) + .etiqueta1 {
+    color: #757575;
+}
+.campos:focus + .etiqueta2 ,
+.campos:not(:placeholder-shown) + .etiqueta2{
+    transform: translateY(-20px);
+    background-color: white;
+    color: rgb(3, 105, 239);
+    font-size: 12px;
+    padding: 5px;
+}
+
+.campos:not(:focus) + .etiqueta2 {
+    color: #000, .4;
+}
+
+.boton{
+    width: 200px;
+    background-color: rgb(3, 105, 239);
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 7px;
+    border-radius: 4px;
+}
+
+.etiqueta-imagen{
+    font-size: 14px;
+}
+
+.file-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: solid 2px grey;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.boton-imagen{
+        background-color: #007bff;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        width: 350px;
+      
+}
